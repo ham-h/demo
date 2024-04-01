@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.incoming-header{
+    display: flex;
+    margin: auto;
+    min-height: 44px;
+    margin-top: 10px;
+    border: 1px solid #EAECF0;
+    /* margin-bottom: 10px; */
+  padding-top: 10px;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+  
+}
+.header{
+    /* width: 139px; */
+width: 25%;
+padding: 5px 7px;
+
+}
+/* .wholediv{
+    border: 1px solid #EAECF0;
+} */
+.kioske{
+    background-color: #f4f7fa;
+    /* padding: 10px; */
+    /* width: 450px; */
+    /* padding: auto 7px; */
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid #EAECF0;
+    width: 100%;
+   display: flex;
+   padding-top: 10px;
+}
+ .keoskeblock{
+    display: block;
+    width: 25%;
+}
+.language{
+    display: flex;
+    flex: 1;
+    width: 25%;
+    margin-top: 15px;
+}
+.severity{
+    padding: 10px;
+    background-color: #206bc4;
+    border-radius: 10px;
+    flex: 1;
+    color: white;
+    border: none;
+    width: 100px; 
+    height: 40px;
+}
+.severityclass{
+    margin-top: 10px;
+    width: 25%;
+    flex:1;
+}
+.ringing{
+    margin-top: 10px;
+    width: 25%;
+    flex:1;
+}

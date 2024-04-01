@@ -1,0 +1,159 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta19
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Blank page - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="./dist/css/tabler.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-flags.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-payments.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/tabler-vendors.min.css?1684106062" rel="stylesheet"/>
+    <link href="./dist/css/demo.min.css?1684106062" rel="stylesheet"/>
+    <link rel="stylesheet" href="./dist/css/passportdetails.css">
+    <style>
+      @import url('https://rsms.me/inter/inter.css');
+      :root {
+      	--tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+      }
+      body {
+      	font-feature-settings: "cv03", "cv04", "cv11";
+      }
+    </style>
+  </head>
+  <body >
+    <script src="./dist/js/demo-theme.min.js?1684106062"></script>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+    <div class="modal fade modal-dialog modal-lg " id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-lg" style=" background: #E0EBFA;">
+            <div class="modal-content" >
+                <div class="modal-body  body-border"  >
+                    <!-- body-border -->
+                    <div class="container" >
+
+                      <div> <h3 style="margin-top: 3px; margin-bottom: 4px;">Passport Details</h3></div> 
+                        <div class="table-responsive">
+                        <table class="table table-bordered hov ">
+                            <thead class="thead" >
+                                <tr>
+                                    <th scope="col" class="thh">Field name</th>
+                                    <th scope="col" class="thh" >Value</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody style="color: black !important;">
+                                <tr >
+                                    <td class="td-width">Passport Type</td>
+                                    <td class="copy">p<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                    
+                                </tr>
+                                <tr >
+                                    <td>Passport Number</td>
+                                    <td class="copy" id="copy">HCDJSKS
+                                        
+                                        <button class="button-copy" > <i class="far fa-copy"></i></button> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>National Name</td>
+                                    <td class="copy">Charaparambil Ravindran Sandeep
+                                      <button class="button-copy"> <i class="far fa-copy"></i></button> 
+                                    </td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>English Name</td>
+                                    <td class="copy">Charaparambil Ravindran Sandeep<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Sex</td>
+                                    <td class="copy">F<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of birth</td>
+                                    <td class="copy">26-12-2000<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Expiry</td>
+                                    <td class="copy">26-12-2000<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                </tr>
+                                <tr>
+                                    <td>Country code</td>
+                                    <td class="copy">200<button class="button-copy"> <i class="far fa-copy"></i></button> </td>
+                                </tr>
+                                <tr>
+                                    <td class="border">
+                                    <dd >English Surname</dd>
+                                    <dd >English Firstname</dd>
+                                   
+                                </td>
+                                <td class="border">
+                                    <dd class="copy" >Charaparambil Ravindran<button class="button-copy"> <i class="far fa-copy"></i></button></dd>
+                                        
+                                    <dd class="copy">Sandeep<button class="button-copy"> <i class="far fa-copy"></i></button></dd>
+                                </td>
+                                </tr>
+                                <tr>
+                                    <td class="border">MRZ1</td>
+                                    <td >dfdghghnaskdsfdfghghgjlolkdghngvfcvbmvcbnbvbnbvbnbvhamna hsdasd hassan &gt;&gt;&gt;&gt;&gt;&gt; </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="modal-footer p-0">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+         const copyButtons = document.querySelectorAll('.button-copy');
+
+         copyButtons.forEach(button => {
+             button.addEventListener('click', function() {
+                 const trElement = this.closest('tr');
+                 const textToCopy = Array.from(trElement.querySelectorAll('td')).map(td => td.textContent.trim()).join(' : ');
+                
+                 // const textToCopy = Array.from(elementToCopy.querySelectorAll('dd')).map(dd => dd.textContent.trim()).join(' : ');
+                 navigator.clipboard.writeText(textToCopy).then(function() {
+                     const copiedMessage = document.createElement('span');
+                     copiedMessage.classList.add('copy-message');
+                     copiedMessage.textContent = 'Copied!';
+                     copiedMessage.style.backgroundColor='white';
+                     trElement.appendChild(copiedMessage);
+                                
+                                
+                     setTimeout(() => {
+                         trElement.removeChild(copiedMessage);
+                     }, 1000); 
+                 }).catch(function(err) {
+                     console.error('Failed to copy: ', err);
+                    
+                 });
+             });
+         });
+     });
+     </script>
+    <!-- Libs JS -->
+    <!-- Tabler Core -->
+    <script src="./dist/js/tabler.min.js?1684106062" defer></script>
+    <script src="./dist/js/demo.min.js?1684106062" defer></script>
+  </body>
+</html>

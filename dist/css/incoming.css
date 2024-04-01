@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.incoming-header{
+    display: flex;
+    margin: auto;
+    min-height: 44px;
+    margin-top: 10px;
+    border: 1px solid #EAECF0;
+    
+  padding-top: 10px;
+    align-items: center; 
+    justify-content: space-around; 
+  
+}
+.header{
+    /* width: 139px; */
+width: 25%;
+padding: 5px 7px;
+
+}
+/* .severityheader{
+    margin-left: 20px;
+} */
+.slider{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    max-height: 450px;
+    
+    /* overflow-y: scroll; */
+    overflow: scroll;
+    /* white-space: nowrap; */
+    
+   
+          
+}
+/* .slider::-webkit-scrollbar {
+    width: 10px;
+  } */
+  .slider::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+   width: 10px; 
+  }
+  /* .slider::-webkit-scrollbar-thumb {
+    background: #888; 
+  } */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+ 
+
+
+.kioske{
+    background-color: #f4f7fa;
+   
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /* box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid #EAECF0;
+    width: 100%;
+   display: flex;
+   /* padding-top: 10px; */
+}
+ .kioskblock{
+    display: block;
+    width: 25%;
+     padding-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.language{
+    display: flex;
+    flex: 1;
+    width: 25%;
+   
+    margin: auto 0px;
+}
+.severity{
+    padding: 10px;
+    background-color: #206bc4;
+    border-radius: 10px;
+    flex: 1;
+    color: white;
+    border: none;
+    width: 100px; 
+    height: 40px;
+   
+}
+
+.meduim{
+    background-color: rgb(32,107,196) ;
+    opacity: 0.8;
+    
+}
+.low{
+    background-color:rgb(32,107,196) ;
+    opacity: 0.5;
+}
+.high{
+    background-color:rgb(32,107,196) ;
+}
+.severityclass{
+   
+    width: 25%;
+    flex:1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.ringing{
+    /* margin-top: 10px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 25%;
+    flex:1;
+    /* padding-left: 30px; */
+
+}
